@@ -1121,13 +1121,20 @@ section{
     color: var(--yellow);
     margin-bottom: 1rem;
 }
+.pay .btn{
+    padding: 1rem 4rem;
+    border-radius: .4rem;
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-top: 1.5rem;
+}
 .pay .pay-list{
     display: flex;
     gap: 2rem;
     margin-top: 5rem;
 }
 .pay .pay-list .pay-item{
-    flex: 1 1 50%;
+    flex: 1 1 30%;
 }
 .pay .pay-list .pay-item .pay-text{
     text-align: left;
@@ -1192,6 +1199,23 @@ section{
 }
 .pay .pay-list .pay-item .pay-text .pay-price{
     margin-top: .5rem;
+}
+.pay .pay-list .pay-item .pay-text .pay-total{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--yellow);
+}
+.pay .pay-list .pay-item .pay-text .pay-time {
+    margin: 1rem 0;
+}
+.pay .pay-list .pay-item .pay-text .pay-time label{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--black2);
+}
+.pay .pay-list .pay-item .pay-text .pay-time #times{
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
 }
 /* news */
 .news{
