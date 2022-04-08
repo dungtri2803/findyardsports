@@ -361,8 +361,9 @@ section{
     border-radius: 0.5rem;
 }
 .yard-hot .yard-hot-list .yard-hot-item{
+    border-radius: 1rem;
     transform: translateY(-0.5rem);
-    box-shadow: 0 0 1rem rgb(0 0 0 / 50%);
+    box-shadow: 0 0 1rem rgb(0 0 0 / 20%);
     height: 40rem;
 }
 .yard-hot .yard-hot-list .yard-hot-item .yard-hot-text .yard-hot-price p{
@@ -409,7 +410,7 @@ section{
 }
 .testimonial .testimonial-list .testimonial-item{
     background-color: var(--white);
-    box-shadow: 0 0 2rem 0rem rgba(0,0,0,0.1);
+    box-shadow: 0 0 .5rem 0rem rgba(0,0,0,0.1);
     padding: 2rem;
 }
 .testimonial .testimonial-list .testimonial-item:hover{
