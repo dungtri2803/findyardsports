@@ -452,13 +452,11 @@ section{
 }
 .news-single .news-single-list{
     display: flex;
-    flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
-    justify-content: center;
 }
 .news-single .news-single-list .news-single-item{
-    flex: 1 1 30%;
+    width: 35rem;
 }
 .news-single .news-single-list .news-single-item .news-single-image{
     width: 100%;
@@ -484,6 +482,7 @@ section{
     margin-top: 1rem;
 }
 .news-single .btn{
+    margin-top: 1rem;
     font-size: 1.5rem;
     color: var(--white);
     border-radius: 1rem;    
@@ -719,14 +718,13 @@ section{
 .yard .yard-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
 }
 .yard .yard-list .yard-item{
-    flex: 1 1 30%;
+    width: 35rem;
 }
 .yard .yard-list .yard-item .yard-image{
     width: 100%;
-
 }
 .yard .yard-list .yard-item .yard-image img{
     width: 100%;
@@ -749,8 +747,9 @@ section{
 }
 .yard .yard-list .yard-item{
     transform: translateY(-0.5rem);
-    box-shadow: 0 0 1rem rgb(0 0 0 / 50%);
+    box-shadow: 0 0 1rem rgb(0 0 0 / 30%);
     height: 40rem;
+    border-radius: 0.5rem;
     overflow: hidden;
 }
 .yard .yard-list .yard-item .yard-text .yard-price p{
@@ -1250,6 +1249,9 @@ section{
     line-height: 2;
     color: var(--yellow);
     text-align: right;
+}
+.pay .pay-item-yard .pay-yard .pay-info-yard img{
+    width: 100%;
 }
 .pay .btn{
     font-size: 1.5rem;
