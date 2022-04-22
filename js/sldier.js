@@ -2,7 +2,7 @@ var swiper = new Swiper(".booking-bar-list", {
   slidesPerView: 1,
   spaceBetween: 10,
   autoplay: {
-    delay: 5000,
+    delay: 55000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -40,7 +40,7 @@ var swiper = new Swiper(".category-list", {
   slidesPerView: 1,
   spaceBetween: 10,
   autoplay: {
-    delay: 5000,
+    delay: 1000000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -79,7 +79,7 @@ var swiper = new Swiper(".yard-hot-list", {
   slidesPerView: 1,
   spaceBetween: 10,
   autoplay: {
-    delay: 5000,
+    delay: 55000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -118,7 +118,7 @@ var swiper = new Swiper(".testimonial-list", {
   slidesPerView: 1,
   spaceBetween: 10,
   autoplay: {
-    delay: 5000,
+    delay: 50500,
     disableOnInteraction: false,
   },
   pagination: {
