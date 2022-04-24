@@ -30,3 +30,18 @@ $(document).ready(function () {
     $(".servicedrop").addClass("fa-chevron-down").removeClass("fa-chevron-up");
   });
 });
+
+// const registerBtn = document.querySelectorAll('.js-register-modal')
+// const modal = document.querySelector('.js-modal')
+// const modalClose = document.querySelector('.js-modal-close')
+// const modalContainer = document.querySelector('.js-modal-container')
+
+function showModal(){
+  var show = document.querySelector('.js-modal')
+  show.style.display = 'block'
+}
+
+function hideModal(){
+  var hide = document.querySelector('.js-modal')
+  hide.style.display = 'none'
+}
