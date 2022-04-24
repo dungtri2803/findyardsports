@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- effect -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <header class="header" id="header">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">trang chủ</a></li>
+            <li><a href="yard.html">Đặt sân</a></li>
+            <li><a href="">Sân hot</a></li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="">Liên hệ</a></li>
+          </ul>
+          <div class="login">
+            <a href="login.html">đăng nhập</a>
+            <a href="login.html">đăng ký</a>
+          </div>
+          <div id="menuBar" class="icons bx bx-menu"></div>
+        </div>
+      </header>
+      <!-- header end -->
+      <!-- pay -->
+      <section class="history-yard" id="history-yard">
+        <h1 class="text-center mb-4">Lịch sử đặt sân</h1>
+        <div class="history-container">
+          <div class="row">
+            <div class="col-md-4">
+              <div
+                class="shadow p-3 mb-5 rounded-3 d-flex flex-column vh-100 flex-shrink-0 p-3 text-white bg-dark"
+                style="width: 400px"
+              >
+                <a
+                  href="/"
+                  class="title-col d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+                >
+                  <img src="images/logo.png" alt="" />
+                  <span class="title-h">FindYardSport</span>
+                </a>
+                <hr />
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item mb-3">
+                    <a href="#" class="nav-link active" aria-current="page">
+                      <i class="hs-icon bx bxs-user-circle"></i>
+                      <span class="content-h ms-2">Thông tin tài khoản</span>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a href="#" class="nav-link text-white">
+                      <i class="hs-icon bx bx-football"></i>
+                      <span class="content-h ms-2">Lịch đặt của tôi</span>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a href="#" class="nav-link text-white">
+                      <i class="hs-icon bx bxs-bell"></i>
+                      <span class="content-h ms-2">Thông báo</span>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a href="#" class="nav-link text-white">
+                      <i class="hs-icon bx bx-log-out-circle"></i
+                      ><span class="content-h ms-2">Đăng xuất</span>
+                    </a>
+                  </li>
+                </ul>
+                <hr />
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="history-yard-content">
+                <div class="border-light">
+                  <div class="row justify-content-center m-2">
+                    <h2 class="w-100 text-center d-none d-md-block">
+                      Lịch đặt
+                    </h2>
+                  </div>
+                  <form action="" class="form-history">
+                    <div class="row pl-md-2">
+                      <div class="col-xl-3 col-md-3 mb-4">
+                        <label for="" class="form-label">Trạng thái</label>
+                        <select
+                          name="status"
+                          id="form_guests"
+                          data-style="btn-selectpicker"
+                          title=" "
+                          class="form-control"
+                        >
+                          <option value="all" selected="">Tất cả</option>
+                          <option value="new">Mới/Đã xác nhận</option>
+                          <option value="pending">Chờ xác nhận</option>
+                          <option value="done">Đã qua/Hoàn thành</option>
+                          <option value="cancelled">Đã hủy</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-3 col-md-3 mb-4">
+                        <label for="" class="form-label">Từ ngày</label>
+                        <input
+                          type="text"
+                          id="begin_date"
+                          name="begin_date"
+                          class="datepicker datepicker-begin form-control"
+                          data-provide="datepicker"
+                          value="25/03/2022"
+                        />
+                      </div>
+                      <div class="col-xl-3 col-md-3 mb-4">
+                        <label for="" class="form-label">Đến ngày</label>
+                        <input
+                          type="text"
+                          id=""
+                          name=""
+                          class="datepicker datepicker-end form-control"
+                          data-provide="datepicker"
+                          value="25/04/2022"
+                        />
+                      </div>
+                      <div class="col-sm-3 mb-4 order-2 order-sm-1">
+                        <button
+                          type="submit"
+                          class="btn-history btn-primary search-btn"
+                        >
+                          <i class="fas fa-search mr-1"></i>Tìm kiếm
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="row justify-content-center m-2">
+                    <h3>Không có dữ liệu.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer section start -->
+      <footer class="footer" id="footer">
+        <div class="footer-list">
+          <div class="footer-item">
+            <h2>find yard Sport</h2>
+            <ul>
+              <li><a href="">Giới thiệu FYS</a></li>
+              <li><a href="">BLog</a></li>
+              <li><a href="">Điều khoản sử dụng</a></li>
+              <li><a href="">Chính sách bảo mật</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h2>THÔNG TIN LIÊN HỆ</h2>
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="bx bxl-facebook-circle"></i>findyardsport</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="bx bxl-gmail"></i>findyardsport@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h2>THANH TOÁN</h2>
+            <img src="images/mastercard.png" alt="" />
+            <img src="images/visa.png" alt="" />
+            <img src="images/discover.png" alt="" />
+            <img src="images/momo.png" alt="" />
+          </div>
+          <div class="footer-item">
+            <img src="images/logo.png" alt="" />
+          </div>
+        </div>
+      </footer>
+      <!-- header start -->
+      <!-- footer section end -->
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/sldier.js"></script>
+  </body>
+</html>
