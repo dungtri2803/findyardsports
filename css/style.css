@@ -226,7 +226,10 @@ section {
   opacity: 0.8;
 }
 .booking-bar .booking-list .booking-item .booking-bar-form input {
-  background: transparent;
+  border-radius: 5rem;
+  border: 0!important;
+  box-shadow: none !important;
+  outline: none;
   width: 100%;
   padding: 2rem;
   font-size: 1.5rem;
