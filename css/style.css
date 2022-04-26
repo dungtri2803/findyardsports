@@ -1719,6 +1719,41 @@ section {
 /* end sidebar */
 /* end history-yard */
 /* update cho nay */
+/* contact */
+.contact{
+  padding: 15rem 0;
+}
+.contact h1{
+  font-size: 2.5rem;
+  color: var(--yellow);
+  margin-bottom: 2rem;
+}
+.contact-map{
+  width: 100%;
+}
+.contact-img img{
+  width: 100%!important;
+}
+
+.contact-content{
+  padding: 3rem 9%;
+}
+.mb-contact{
+  margin-bottom: 1rem;;
+}
+.contact .form-control{
+  padding: 2rem;
+}
+.contact .btn{
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: var(--yellow);
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+/* end contact */
 .reviews {
   padding-top: 15rem;
 }
