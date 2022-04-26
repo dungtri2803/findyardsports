@@ -1763,6 +1763,38 @@ section {
   margin-bottom: 2rem;
   text-align: center;
 }
+.rating {
+  display: inline-flex;
+  margin-top: -10px;
+  flex-direction: row-reverse
+}
+
+.rating>input {
+  display: none
+}
+
+.rating>label {
+  position: relative;
+  width: 28px;
+  font-size: 35px;
+  color: var(--yellow);
+  cursor: pointer
+}
+
+.rating>label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+  opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+  opacity: 1
+}
 .bdge {
   height: 21px;
   background-color: orange;
